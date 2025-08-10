@@ -21,7 +21,7 @@ Screenshot/configuration file showing firewall rules applied.
 
 sudo ufw status verbose
 
-image
+![1](1.png)
 
 sudo apt install ufw -y 
 
@@ -29,7 +29,7 @@ sudo apt install ufw -y
 
 sudo ufw enable
 
-image
+![2](2.png)
 
 #### Step 3:- current rules (for screenshot #1)
 
