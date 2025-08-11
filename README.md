@@ -29,13 +29,13 @@ sudo apt install ufw -y
 
 sudo ufw enable
 
-![2](2.png)
+![2](Screenshots/2.png)
 
 #### Step 3:- current rules (for screenshot #1)
 
 sudo ufw status verbose
 
-image
+![3](Screenshots/3.png)
 
 #### Step 4:- Block inbound Telnet (port 23)
 
@@ -43,7 +43,7 @@ sudo ufw deny 23/tcp
 
 This creates a rule to block all TCP traffic on port 23.
 
-image
+![4](Screenshots/4.png)
 
 #### Step 5:- Test the block
 
@@ -51,13 +51,15 @@ Install telnet client if not already present:
 
 sudo apt install telnet -y
 
+![5](Screenshots/5.png)
+
 Attempt to connect:
 
 telnet localhost 23
 
 Expected result: Connection refused or Unable to connect.
 
-image
+![6](Screenshots/6.png)
 
 #### Step 6:- Allow SSH (port 22)
 
@@ -65,15 +67,19 @@ sudo ufw allow 22/tcp
 
 This ensures you don’t lock yourself out if connecting remotely.
 
-image
+![7](Screenshots/7.png)
 
 #### Step 7:- Remove the Telnet block
 
 sudo ufw delete deny 23/tcp
 
+![8](Screenshots/8.png)
+
 #### Step 8:- Final rule list (for screenshot #2)
 
 sudo ufw status verbose
+
+![9](Screenshots/9.png)
 
 #### Summarize how firewall filters traffic.
 
