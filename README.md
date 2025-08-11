@@ -21,7 +21,7 @@ Screenshot/configuration file showing firewall rules applied.
 
 sudo ufw status verbose
 
-![1](1.png)
+![1](Screenshots/1.png)
 
 sudo apt install ufw -y 
 
